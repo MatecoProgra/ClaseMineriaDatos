@@ -24,7 +24,7 @@ def linear_regression(df: pd.DataFrame, x: str, y: str) -> None:
     df.plot(x=x, y=y, kind='scatter')
     plt.plot(df[x], [coef.values[1] * x + coef.values[0] for _, x in fixed_x.items()], color='red')
     plt.xticks(rotation=90)
-    plt.savefig(f'img/lr_{y}_{x}.png')
+    plt.savefig(f'{ruta}/lr_{y}_{x}.png')
     plt.close()
 
 df = pd.read_csv("csv/registroCrimenes.csv", index_col=False)
