@@ -2,7 +2,7 @@ import pandas as pd
 
 from statsmodels.formula.api import ols
 import statsmodels.api as sm
-df = pd.read_csv("../csv/registroCrimenes.csv", index_col=False)
+df = pd.read_csv("csv/registroCrimenes.csv", index_col=False)
 
 columnas_numericas = [ 'Vict_Age', 'LAT', 'LON']
 columnas_categoricas = ["Date_Occ", "Time_Occ", 'Weapon', 'Area_Name', 'Crime_Desc', 'Vict_Sex', 'Vict_Descent', 'Premis_Desc', 'Crm_Status']
